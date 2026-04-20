@@ -14,7 +14,7 @@ html {
 
 /* Default = Dark Mode */
 body {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.254);
     color: white;
 
     width: 100%;
@@ -23,14 +23,14 @@ body {
 }
 
 header {
-    margin-top: 2rem;
     padding: 1rem 9%;
 
     position: fixed;
-
+    top: 0;
+    left: 0;
     width: 100%;
 
-    background-color: transparent;
+    background-color: black;
     filter: drop-shadow(10px);
 
     display: flex;
@@ -38,13 +38,43 @@ header {
     align-items: center;
 
     z-index: 100;
+}
 
+.logo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(176, 255, 72);
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+.logo:hover {
+    transform: scale(1.1);
 }
 
 /* Style links */
 nav a {
     color: rgb(176, 255, 72);
-    font-weight: bold;
+    margin-left: 4rem;
+}
+
+nav button {
+    margin-left: 4rem;
+    padding: 6px 1.4rem;
+    border-radius: 6px;
+    border: none;
+}
+
+nav a:hover,
+nav a.active {
+    color: rgb(176, 255, 72);
+    border-bottom: 3px solid rgb(176, 255, 72);
+}
+
+.home {
+    display: flex;
+    margin-top: 10rem;
 }
 
 /* Products layout */
@@ -68,14 +98,12 @@ button {
     cursor: pointer;
 }
 
+**************************************************************************
+
 /* 🌞 Light Mode */
 .light-mode {
     background-color: white;
     color: black;
-}
-
-.light-mode .product {
-    border: 1px solid black;
 }
 
 .light-mode nav {
@@ -90,4 +118,8 @@ button {
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+.light-mode .product {
+    border: 1px solid black;
 }

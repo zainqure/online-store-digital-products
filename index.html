@@ -9,40 +9,37 @@
 </head>
 <body>
     <header>
-        <a href="#">LOGO</a>
+        <a href="#" class="logo">LOGO</a>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="shop.html">Shop</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+            <button id="toggleMode">Switch Mode</button>
         </nav>
     </header>
-    <section>
-        <h1>My Digital Product Store</h1>
-        <p>Simple and useful digital products for you</p>
+    <section class="home">
+        <section class="products">
+            <div class="product">
+                <h2>Gratitude Journal</h2>
+                <p>Write your daily thoughts and feel better.</p>
+                <button>Buy Now</button>
+            </div>
 
-        <button id="toggleMode">Switch Mode</button>
+            <div class="product">
+                <h2>Emotional Dump Journal</h2>
+                <p>Release your stress and organize your feelings.</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <h2>Study Planner</h2>
+                <p>Plan your study time and stay organized.</p>
+                <button>Buy Now</button>
+            </div>
+        </section>
     </section>
-    <section class="products">
-        <div class="product">
-            <h2>Gratitude Journal</h2>
-            <p>Write your daily thoughts and feel better.</p>
-            <button>Buy Now</button>
-        </div>
-
-        <div class="product">
-            <h2>Emotional Dump Journal</h2>
-            <p>Release your stress and organize your feelings.</p>
-            <button>Buy Now</button>
-        </div>
-
-        <div class="product">
-            <h2>Study Planner</h2>
-            <p>Plan your study time and stay organized.</p>
-            <button>Buy Now</button>
-        </div>
-
-    </section>
+    
 
     <script>
         const toggleBtn = document.getElementById("toggleMode");
