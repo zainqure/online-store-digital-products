@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div id="hamburger-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+        </div>
+    </header>
     
+    <h2 class="section-title">Our Products</h2>
+    <section class="products">
+        <div class="product">
+            <h2>Gratitude Journal</h2>
+            <p>Write your daily thoughts and feel better.</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <h2>Emotional Dump Journal</h2>
+            <p>Release your stress and organize your feelings.</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <h2>Study Planner</h2>
+            <p>Plan your study time and stay organized.</p>
+            <button>Buy Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Zainab Qureshi</p>
+        <div class="right">
+            <a href="#" class="footer-text">Contact</a>
+            <a href="#" class="footer-text">Privacy</a>
+            <img class="moon" src="img1.jpg" alt="">
+            <img class="sun" src="img2.jpg" alt="">
+            <div id="toggleMode" class="mode-btn">
+                <div class="mode-inner"></div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        const toggleBtn = document.getElementById("toggleMode");
+
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+        });
+    </script>
 </body>
 </html>
