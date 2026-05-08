@@ -17,6 +17,9 @@ This project was created to help students and individuals easily find useful dig
 - Canva – for product images  
 - ChatGPT – for learning, debugging, and improving ideas  
 
+## What changed from Project 01 to Project 02?
+From Project 01 to Project 02, I improved the design, added more pages and content, and fixed layout issues. I made the website responsive so it works better on mobile devices. I also improved the navigation and added small animations to make the site look more modern and interactive.
+
 ## How to visit it
 Click the link below to view the website:
 
