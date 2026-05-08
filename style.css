@@ -121,7 +121,7 @@ nav a.active {
     margin-bottom: 30px;
 }
 .banner-text a {
-    background-color: rgba(255, 255, 255, 0.198);
+    background-color: rgba(233, 128, 0, 0.343);
     color: rgb(255, 68, 0);
     text-shadow: 5px 2px 5px black;
     font-size: 14px;
@@ -139,9 +139,47 @@ nav a.active {
                 0 0 200px rgb(255, 68, 0);
 }
 
+/* About Us */
+#about {
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about h2 {
+    padding: 50px;
+}
+#about p {
+    margin: 0 90px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+#about .btn {
+    margin-bottom: 60px;
+
+    background-color: rgba(233, 128, 0, 0.343);
+    color: rgb(255, 68, 0);
+    font-size: 14px;
+    font-weight: 800;
+
+    padding: 5px 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+#about .btn:hover {
+    box-shadow: 0 0 5px rgb(255, 68, 0), 
+                0 0 25px rgb(255, 68, 0), 
+                0 0 50px rgb(255, 68, 0), 
+                0 0 100px rgb(255, 68, 0), 
+                0 0 200px rgb(255, 68, 0);
+}
+
+
 /* featured categories */
 .categories {
-    margin: 70px 0;
+    margin: 40px 0;
 }
 .row{
     display: flex;
@@ -150,6 +188,8 @@ nav a.active {
     justify-content: space-around;
 }
 .col-1 {
+    border: 5px solid white;
+
     flex-basis: 30%;
     min-width: 250px;
     margin-bottom: 30px;
@@ -174,13 +214,13 @@ nav a.active {
     color: rgb(255, 68, 0);
 }
 
-.products {
-    text-align: center;
 
+.products {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 10px;
+
+
 }
 
 .product {
@@ -204,14 +244,14 @@ button {
     color: black;
     font-size: 10px;
 
-    width: 150px;
-    height: 20px;
+    width: 80px;
+    height: 30px;
     
     padding: 4px 5px;
 
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     border-radius: 2px;
     transition: 0.3s ease;
@@ -314,7 +354,7 @@ footer .mode-btn .mode-inner {
 }
 
 .light-mode .section-title {
-    color: black;
+    color: rgb(255, 68, 0);
 }
 
 .light-mode .product {
@@ -365,6 +405,145 @@ footer .mode-btn .mode-inner {
     transform: scale(0.7);
     background-color: rgb(189, 184, 177);
 }
+.light-mode .contact-header h1 {
+    color: black;
+}
+.light-mode .about-header h1 {
+    color: black;
+}
+
+/* Shop Page */
+.shop-page-only {
+    margin-top: 100px;
+}
+
+/* Contact Page */
+
+.contact-header h1 {
+    margin-top: 150px;
+    margin-bottom: 50px;
+
+    font-weight: 900;
+    font-size: 28px;
+    color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+}
+
+.fa-regular {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.contactinfo {
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.contactinfo-box {
+    background-color: rgb(255, 68, 0);
+
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactinfo-box p {
+    font-size: 12px;
+}
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+}
+.contact-page-box {
+    background-color: rgb(255, 68, 0);
+    border-radius: 15px;
+
+    width: 500px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-page-box h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.input-box input {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    font-size: 12px;
+
+    padding: 20px;
+    margin-bottom: 10px;
+
+    width: 400px;
+    height: 20px;
+
+    border-radius: 10px;
+}
+.message-box textarea{
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+
+    font-size: 12px;
+    padding: 20px;
+
+    width: 400px;
+    height: 160px;
+
+    border-radius: 10px;
+    resize: none;
+    overflow-y: auto;   /* vertical scroll when needed */
+}
+.contact-page-box button{
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    font-size: 12px;
+
+    border-radius: 15px;
+
+    margin-top: 10px;
+}
+
+
+/* About Page */
+
+.about-header h1 {
+    margin-top: 150px;
+    margin-bottom: 50px;
+
+    font-weight: 900;
+    font-size: 28px;
+    color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+}
+.about-paragraph p {
+    margin: 20px;
+
+    text-align: center;
+
+    font-size: 12px;
+}
+
 
 @media (max-width:790px) {
 
@@ -387,14 +566,21 @@ footer .mode-btn .mode-inner {
     }
 
     .products {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
 
     .product {
         padding: 20px;
     }
 
+    #about {
+        font-size: 10px;
+    }
+
 }
+
+
 
 @media (max-width:576px) {
 
@@ -430,6 +616,18 @@ footer .mode-btn .mode-inner {
     .product {
         margin: 10px;
         padding: 10px;
+    }
+
+    #about {
+        border-top: 3px solid rgb(255, 68, 0);
+        align-items: center;
+    }
+    #about h2{
+        font-size: 20px;
+    }
+    #about p {
+        font-size: 18px;
+        text-align: center;
     }
 }
 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="about-header">
+        <h1>About Us</h1>
+    </div>
+
+    <div class="about-paragraph">
+        <p>
+            Welcome to our digital store. We specialize in creating and selling high-quality digital products that help you work smarter and more efficiently.
+        </p>
+
+        <p>
+            Our products include templates, guides, and tools designed for creators, students, and professionals who want fast and practical solutions.
+        </p>
+
+        <p>
+            All purchases are delivered instantly after payment, so you can start using your product right away—no waiting, no shipping delays.
+        </p>
+
+        <p>
+            We focus on quality, simplicity, and usefulness, making sure every product adds real value to your work or projects.
+        </p>
+
+        <p>
+            If you have any questions, feel free to contact us anytime.
+        </p>
+    </div>
+    
+    
+
+
+    <footer>
+        <p>© 2026 Zainab Qureshi</p>
+        <div class="right">
+            <a href="#" class="footer-text">Contact</a>
+            <a href="#" class="footer-text">Privacy</a>
+            <img class="moon" src="image/img1.jpg" alt="">
+            <img class="sun" src="image/img2.jpg" alt="">
+            <div id="toggleMode" class="mode-btn">
+                <div class="mode-inner"></div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        const toggleBtn = document.getElementById("toggleMode");
+
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+        });
+    </script>
+</body>
+</html>

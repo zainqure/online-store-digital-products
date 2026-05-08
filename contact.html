@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <div class="contact-header">
+        <h1>Contact Us</h1>
+    </div>
+
+    <section class="contactinfo">
+        <div class="contactinfo-box">
+            <i class="fa-regular fa-location-dot" style="color: rgb(0, 0, 0);"></i>
+            <p>123 Main street, xxx</p>
+        </div>
+        <div class="contactinfo-box">
+            <i class="fa-regular fa-envelope" style="color: rgb(0, 0, 0);"></i>
+            <p>logoshop@site.com</p>
+        </div>
+        <div class="contactinfo-box">
+            <i class="fa-regular fa-phone" style="color: rgb(0, 0, 0);"></i>
+            <p>+1 (123) 456-7890</p>
+        </div>
+    </section>
+
+    <section class="contact-page">
+        <div class="contact-page-box">
+            <h2>Get In Touch</h2>
+            <form>
+                <div class="input-box">
+                <input type="text" placeholder="Your name">
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Your email">
+                </div>
+                <div class="message-box">
+                    <textarea placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="contact-page-btn">Send</button>
+            </form>
+        </div>
+    </section>
     
+
+    <footer>
+        <p>© 2026 Zainab Qureshi</p>
+        <div class="right">
+            <a href="#" class="footer-text">Contact</a>
+            <a href="#" class="footer-text">Privacy</a>
+            <img class="moon" src="image/img1.jpg" alt="">
+            <img class="sun" src="image/img2.jpg" alt="">
+            <div id="toggleMode" class="mode-btn">
+                <div class="mode-inner"></div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        const toggleBtn = document.getElementById("toggleMode");
+
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+        });
+    </script>
 </body>
 </html>
